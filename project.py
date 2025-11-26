@@ -1,7 +1,7 @@
-from data import load_presents
-from functions import *
+from file_Crud import *
 
 presents = load_presents()
+print(presents)
 
 id_counter = 3
 while True:

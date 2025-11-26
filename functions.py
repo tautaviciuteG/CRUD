@@ -12,7 +12,7 @@ def print_presents(presents):
     print('Jūsų dovanų sąrašas')
     for present in presents:
         print(
-            f'{present['id']}. Dovana: {present['present_title']}. Dovanai turi sutapyti {present['price']} Eur, bet {present['for who']} bus labai laimingas žmogus!')
+            f'{present['id']}. {present['present_title']}. Dovanai turi sutapyti {present['price']} Eur, bet {present['for who']} bus labai laimingas žmogus!')
 
 
 def add_presents(id_counter, presents):
