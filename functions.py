@@ -1,3 +1,5 @@
+from data import load_presents
+
 def print_info():
     print('******************************************')
     print("1. Išspausdinti dovanų sąrašą")

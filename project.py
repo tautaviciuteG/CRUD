@@ -1,8 +1,6 @@
-from file_Crud import *
+from db_CRUD import *
 
 presents = load_presents()
-print(presents)
-
 id_counter = 3
 while True:
     print_info()
