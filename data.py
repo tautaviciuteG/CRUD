@@ -3,18 +3,18 @@ def load_presents():
                 'id': 1,
                 'present_title':'RingConn Gen 2 išmanusis žiedas',
                 'price': 279,
-                'for who': 'Tomas'
+                'for_who': 'Tomas'
                 },
                 {
                 'id': 2,
                 'present_title': 'Knyga. Kas vyksta Japonijoje',
                 'price': 25.79,
-                'for who': 'Agnė'
+                'for_who': 'Agnė'
                 },
                 {
                 'id': 3,
                 'present_title': 'Vytautas Mineral Spa dovanų kuponas',
                 'price': 100,
-                'for who': 'Aušra'
+                'for_who': 'Aušra'
                 }
             ]

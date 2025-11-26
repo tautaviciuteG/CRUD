@@ -1,6 +1,6 @@
 import csv
 
-headers = ['id', 'present_title', 'price', 'for who']
+headers = ['id', 'present_title', 'price', 'for_who']
 
 
 def load_presents():
@@ -21,7 +21,7 @@ def add_presents(id_counter, presents):
     price = float(input('Kokia dovanos kaina?: '))
     who = input('Kam skirta dovana?: ')
     id_counter += 1
-    present = {'id': id_counter, 'present_title': title, 'price': price, 'for who': who}
+    present = {'id': id_counter, 'present_title': title, 'price': price, 'for_who': who}
     presents.append(present)
     save_presents(presents)
     return id_counter
@@ -30,13 +30,13 @@ def add_presents(id_counter, presents):
 def edit_present(presents):
     for present in presents:
         print(
-            f'{present['id']}. Dovana: {present['present_title']}. Kaina: {present['price']} Eur. Kam?: {present['for who']}')
+            f'{present['id']}. Dovana: {present['present_title']}. Kaina: {present['price']} Eur. Kam?: {present['for_who']}')
     edit_id = input('Įrašykite dovanos ID, kurią norite redaguoti: ')
     for present in presents:
         if edit_id == str(present['id']):
             present['present_title'] = input('Įveskite dovanos pavadinimą: ')
             present['price'] = float(input('Nurodykite dovanos kainą: '))
-            present['for who'] = input('Nurodykite, kam skirta dovana: ')
+            present['for_who'] = input('Nurodykite, kam skirta dovana: ')
             break
     save_presents(presents)
 
@@ -44,7 +44,7 @@ def edit_present(presents):
 def delete_presents(presents):
     for present in presents:
         print(
-            f'{present['id']}. Dovana: {present['present_title']}. Kaina: {present['price']} Eur. Kam?: {present['for who']}')
+            f'{present['id']}. Dovana: {present['present_title']}. Kaina: {present['price']} Eur. Kam?: {present['for_who']}')
     del_id = input('rašykite dovanos ID, kurią norite ištrinti: ')
     for present in presents:
         if del_id == str(present['id']):
@@ -69,5 +69,5 @@ def print_presents(presents):
     print('Jūsų dovanų sąrašas:')
     for present in presents:
         print(
-            f'{present['id']}. {present['present_title']}. Dovanai turi sutapyti {present['price']} Eur, bet {present['for who']} bus labai laimingas žmogus!')
+            f'{present['id']}. {present['present_title']}. Dovanai turi sutapyti {present['price']} Eur, bet {present['for_who']} bus labai laimingas žmogus!')
 
